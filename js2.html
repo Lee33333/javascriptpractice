@@ -26,16 +26,31 @@
 
 
     //is even
+//     function isEven(num){
+//         if (num % 2 === 0){
+//             //console.log("boo");
+//             return true;
+//         }else {
+//             return false;
+// }
+//     }
+
     function isEven(num){
-        if (num % 2 === 0){
-            //console.log("boo");
-            return true;
-        }else {
-            return false;
-}
+        return (num % 2 === 0);
     }
 
+
     //filter
+    function filter(anyFunction, inputList){
+        // if (anyFunction(item from list)) returns tru, add to new list
+        var outputList = [];
+        for (var i =0; i < inputList.length; i++){
+            if (anyFunction(inputList[i]) === true){
+                outputList.push(inputList[i]);
+            }
+        }
+        return outputList;
+    }
 
 
 
@@ -52,3 +67,5 @@
   </script>
 </body>
 </html>
+
+// code review by Katie passed 
