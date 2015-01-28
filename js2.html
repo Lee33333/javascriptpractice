@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript Learning</title>
+</head>
+<body>
+  <h1>Javascript Learning</h1>
+  <script>
+    // fibonacci
+    function fibonacciSet(max){
+        var fibList = [];
+        if (max > 1){
+            fibList =[1];
+            var currentFib = 1;
+            while (currentFib < max){
+                fibList.push(currentFib);
+                currentFib = fibList[fibList.length-1] + fibList[fibList.length-2];
+            }
+            return fibList;
+        }
+        else {
+            return [1,1];
+        }
+    }
+
+
+
+    //is even
+    function isEven(num){
+        if (num % 2 === 0){
+            //console.log("boo");
+            return true;
+        }else {
+            return false;
+}
+    }
+
+    //filter
+
+
+
+    //sum
+    function sum(alist){
+        var summ = 0;
+        for (var i = 0; i < alist.length; i++){
+            summ = summ + alist[i];   
+        }
+        return summ;
+    }
+
+
+  </script>
+</body>
+</html>
