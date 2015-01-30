@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+    <script>
+    //create new list
+
+function ourFunct(list1){
+
+    var newList = [];
+
+    //create new dict
+    var ourObj = {};
+
+    //iterate through the old list, adding each item into the dict as a key
+    for (var i = 0; i < list1.length; i++){
+        //if (ourObj.indexOf(list1[i]) === -1) {
+        if (list1[i].indexOf(ourObj) === -1) {
+
+            ourObj[list1[i]] = 1;
+        } else {
+            ourObj[list1[i]] = ourObj[list1[i]] + 1;        }
+
+    return ourObj;
+    }
+
+var ourList = ["katie", "amy", "jenny", "katie", "kelley", "katie", "amy"];
+
+console.log(ourFunct(ourList));
+    //if it is already a key, increment the value
+
+    //loop through dictionary and and append any keys with value greater than one to new list
+
+}
+    </script>
+
+</body>
+
+</html>

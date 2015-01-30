@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+pytho
+<html>
+<head>
+</head>
+
+<body>
+    <script>
+
+function ourFunct(list1){
+
+    var newList = [];
+
+    var sortedList = list1.sort();
+    
+    
+    for (i=0; i < sortedList.length -1; i++){
+        if (sortedList[i] === sortedList[i+1]){ 
+            newList.push(sortedList[i]);
+          }
+          }  
+
+    return newList;
+
+}
+
+var ourList = ["katie", "amy", "jenny", "katie", "kelley", "katie", "amy"];
+
+console.log(ourFunct(ourList));
+    </script>
+
+</body>
+
+</html>
