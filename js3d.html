@@ -5,22 +5,27 @@ pytho
 </head>
 
 <body>
-    <script>
+    <script>\
 
 function ourFunct(list1){
 
     var newList = [];
+
+    var lastList = [];
 
     var sortedList = list1.sort();
     
     
     for (i=0; i < sortedList.length -1; i++){
         if (sortedList[i] === sortedList[i+1]){ 
-            newList.push(sortedList[i]);
+            if (newList.indexOf(sortedList[i]) === -1){
+                newList.push(sortedList[i]);
+            }
           }
           }  
 
     return newList;
+
 
 }
 
