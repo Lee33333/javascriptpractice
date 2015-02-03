@@ -338,9 +338,12 @@ makeListButton.addEventListener('click', listMaker);
   <img src="http://www.wallspick.com/wp-content/uploads/2014/12/Grey-Eyes-Cute-Cat-640x400.jpg"
        alt="Adorbz" id="kittenz-rule">
 </fieldset>
-
+<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script>
   // put your code here
+  $('img#kittenz-rule').on("click", function (evt) {
+      $('img#kittenz-rule').attr("src", "http://willrees.com/wp-content/uploads/2014/05/happy-smiling-cute-corgi-dog.jpg");
+  } );
 </script>
 
 <div class="hint">
@@ -374,6 +377,19 @@ makeListButton.addEventListener('click', listMaker);
 
 <script>
   // put your code here
+  $('#make-a-porcupine').on("click", function (evt) {
+      setTimeout(function () {
+          $('#cute-porcupine-image').fadeIn(3000);} ,5000);
+    
+      
+    });
+
+   // $('#make-a-porcupine').on("click", function (evt) {
+   //    // $('#cute-porcupine-image').setTimeout(5000);
+   //    $('#cute-porcupine-image').setTimeout(3000);
+      
+   //  });
+
 </script>
 
 <div class="hint">
