@@ -422,6 +422,27 @@ makeListButton.addEventListener('click', listMaker);
 
 <script>
   // put your code here
+
+function agree(evt) {
+    evt.preventDefault();
+    var theirFood = $('#favorite-food-input').val();
+    $('#agreeable-text').text("I like " + theirFood + ", too!");
+}
+
+$('#agreeable-form').on('submit', agree);
+
+
+
+  // .on("submit",
+  //   function (evt) {
+  //   evt.preventDefault();
+  //   var ourInput = $('#favorite-food-input').val();
+  //   $('agreeable-text').text(ourInput);
+    
+  //   });
+
+
+
 </script>
 
 <div class="hint">
